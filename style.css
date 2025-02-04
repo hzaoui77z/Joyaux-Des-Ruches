@@ -1,0 +1,759 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin-top: 80px; /* Ajustez cette valeur à la hauteur réelle de votre .Section-menu */
+}
+
+.Section-menu {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(31, 28, 28);
+}
+.Section-menu {
+    position: fixed; /* Fixe la barre en haut de l'écran */
+    top: 0; /* Place la barre en haut */
+    left: 0; /* Aligne à gauche */
+    width: 98%; /* Prend toute la largeur de l'écran */
+    z-index: 1000; /* S'assure que la barre reste au-dessus des autres éléments */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile pour la séparation */
+}
+
+.Section-menu img {
+    height: 100%; /* Ajuste la hauteur à celle de la section */
+    max-height: 80px; /* Ne dépasse pas la hauteur de la section */
+    width: auto; /* Conserve les proportions de l'image */
+    object-fit: contain; /* S'assure que l'image reste entièrement visible */
+}
+
+
+.Section-menu nav {
+    display: flex;
+    gap: 47px;
+}
+.Section-menu nav a {
+    font-family: Barlow;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.button-Contact {
+    width: 141.66px;
+    height: 51px;
+    border-radius: 28px;
+    background-color: rgb(197, 142, 23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-button {
+    font-family: Dosis;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.1071428582072258px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.Section-1 {
+    height: 676px;
+    background-color: rgb(197, 142, 23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Section-1-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Section-1-left-txt {
+    width: 570px;
+    height: 676px;
+    align-content: center;
+    margin-left: 80px;
+}
+.tagline {
+    font-family: Dosis;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(31, 28, 28);
+}
+.highlight {
+    font-family: Barlow;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: white;
+    padding-top: 70px;
+}
+.main-title {
+    font-family: Barlow;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(31, 28, 28);
+    padding-top: 40px;
+ }
+ .description {
+    font-family: Dosis;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(31, 28, 28);
+    padding-top: 70px;
+    padding-bottom: 35px;
+}
+.button-ESVP {
+    width: 141.66px;
+    height: 51px;
+    border-radius: 28px;
+    background-color: rgb(31, 28, 28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 0;
+}
+
+.cta-button {
+    font-family: Dosis;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.1071428582072258px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.Section-1-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Utilise toute la largeur disponible */
+    height: 100%; /* Utilise toute la hauteur disponible */
+    overflow: hidden; /* Empêche tout dépassement de l'image */
+    position: relative; /* Nécessaire pour le placement précis de l'image */
+}
+
+
+.Miel-GPT {
+    position: absolute; /* Permet un positionnement précis */
+    right: 0; /* Colle l'image à droite de l'écran */
+    top: 50%; /* Centre verticalement l'image */
+    transform: translateY(-50%); /* Ajuste le centre verticalement */
+    max-width: 90%; /* Limite la largeur à un pourcentage de l'écran */
+    min-width: 300px; /* Assure une largeur minimale pour éviter qu'elle devienne trop petite */
+    height: auto; /* Maintient les proportions */
+    object-fit: contain; /* Assure que l'image ne soit pas rognée */
+}
+
+.Miel-GPT {
+
+    min-height: 200px; /* Assure qu'elle ne devienne pas trop petite non plus */
+}
+.button-Contact, .cta-button {
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-Contact:hover {
+    background-color: rgb(255, 182, 30); /* Couleur légèrement plus lumineuse */
+    transform: translateY(-5px); /* Léger déplacement vers le haut */
+    box-shadow: 0px 5px 15px rgba(255, 182, 30, 0.4); /* Ombre plus intense */
+}
+.cta-button:hover {
+    background-color: rgb(32, 32, 31); /* Couleur légèrement plus lumineuse */
+    transform: translateY(-5px); /* Léger déplacement vers le haut */
+    box-shadow: 0px 5px 15px rgba(2, 2, 2, 0.4); /* Ombre plus intense */
+}
+
+.button-Contact:active, .cta-button:active {
+    transform: translateY(2px); /* Réduit l'effet lorsqu'on clique */
+}
+
+
+.Section-2 {
+    background-color: rgb(31, 28, 28);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+.Section-2-haut {
+    text-align: center;
+    padding-top: 100px;
+}
+.Section-2-haut h1 {
+    font-family: Barlow;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(197, 142, 23);
+}
+.Section-2-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.Section-2-container, .Section-2-container-bis {
+    display: flex; /* Aligne les éléments en ligne */
+    flex-wrap: wrap; /* Permet aux éléments de passer en plusieurs lignes si nécessaire */
+    justify-content: space-around; /* Distribution équitable des éléments */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    gap: 40px; /* Espacement entre les éléments */
+}
+
+.Section-2-container img, .Section-2-container-bis img {
+    max-width: 150px; /* Taille maximale pour uniformiser les images */
+    height: auto; /* Maintient les proportions */
+    margin-bottom: 10px; /* Ajoute de l'espace sous les images */
+    object-fit: contain; /* Assure que les images ne soient pas déformées */
+}
+
+.Section-2-container-1 img {
+    width: 31%;
+}
+.Section-2-container-1 h2 {
+    font-family: Barlow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(197, 142, 23);
+    padding-top: 20px;
+}
+.Section-2-container-1 p {
+    font-family: Dosis;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: white;
+    }
+.Section-2-container-2 img {
+    width:  38%;
+}
+.Section-2-container-2 h2 {
+    font-family: Barlow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(197, 142, 23);
+    padding-top: 20px;
+}
+.Section-2-container-2 p {
+    font-family: Dosis;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: white;
+    }
+.Section-2-container-3 img {
+    width: 33%;
+}
+.Section-2-container-3 h2 {
+    font-family: Barlow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(197, 142, 23);
+}
+.Section-2-container-3 p {
+font-family: Dosis;
+font-size: 21px;
+font-weight: 600;
+line-height: 25px;
+letter-spacing: -0.12857143580913544px;
+color: white;
+}
+.commentaire-2 {
+    margin-bottom: 35px;
+}
+.Section-2-container-bis {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.Section-2-container-4 {
+    display: flex;
+    flex-direction: column; /* Assure un alignement vertical */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre les textes */
+}
+
+.Section-2-container-4 img {
+    max-width: 115px; /* Limite la largeur maximale */
+    height: auto; /* Conserve les proportions */
+    margin-bottom: 15px; /* Ajoute un espace cohérent avec les autres sections */
+    object-fit: contain; /* Assure que l'image est contenue sans déformation */
+}
+
+.Section-2-container-4 h2 {
+    font-family: Barlow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(197, 142, 23);
+    margin-top: -20px;
+}
+.Section-2-container-4 p {
+    font-family: Dosis;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: white;
+    margin-top: 0px;
+    }
+.Section-2-container-5 img {
+    width: 30%;
+}
+.Section-2-container-5 h2 {
+    font-family: Barlow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(197, 142, 23);
+    margin-top: 0px;
+}
+.Section-2-container-5 p {
+    font-family: Dosis;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: white;
+    margin-top: 0px;
+    }
+.Section-2-container-6 img {
+    width:35%;
+}
+.Section-2-container-6 h2 {
+    font-family: Barlow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(197, 142, 23);
+    margin-top: 0px;
+}
+.Section-2-container-6 p {
+    font-family: Dosis;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: white;
+    margin-top: 0px;
+}
+.Section-3 {
+    background-color: rgb(197, 142, 23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+}
+.Section-3-haut {
+    text-align: center;
+    padding-top: 50px;
+}
+.Section-3-haut h1 {
+    font-family: Barlow;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(31, 28, 28);
+}
+.Section-3-service{
+    display: flex; /* Active la disposition flex */
+    flex-wrap: wrap; /* Permet les lignes multiples */
+    justify-content: space-around; /* Distribue uniformément les éléments */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    gap: 100px; /* Espace entre les éléments */
+    max-width: 1200px; /* Largeur maximale commune */
+    margin: 0 auto; /* Centre horizontalement */
+    padding-top: 100px;
+}
+.Section-3-service img, .Section-3-service-bis img {
+    max-width: 200px; /* Ajuste à la taille maximale utilisée pour les images de la section 2 */
+    height: auto; /* Maintient les proportions */
+    margin-bottom: 15px; /* Ajoute un espacement sous chaque image */
+    object-fit: contain; /* Évite les déformations ou rognages */
+}
+
+.Section-3-service div, .Section-3-service-bis div {
+    flex: 1; /* Permet aux éléments de prendre la même largeur */
+    max-width: 300px; /* Fixe une largeur maximale similaire à celle des conteneurs de la section 2 */
+    text-align: center; /* Centre le contenu */
+}
+
+
+.Section-3-service-1 {
+    display: flex;
+    flex-direction: column; /* Assure un alignement vertical */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre les textes */
+}
+
+.Section-3-service-1 h2 {
+    font-family: Barlow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(31, 28, 28);
+    padding-top: 20px;
+}
+.Section-3-service-1 p {
+    font-family: Dosis;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+.Section-3-service-2 {
+    display: flex;
+    flex-direction: column; /* Assure un alignement vertical */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre les textes */
+}
+
+.Section-3-service-2 h2 {
+    font-family: Barlow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(31, 28, 28);
+    padding-top: 20px;
+}
+.Section-3-service-2 p {
+    font-family: Dosis;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+.Section-3-service-3 {
+    display: flex;
+    flex-direction: column; /* Assure un alignement vertical */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre les textes */
+}
+
+.Section-3-service-3 h2 {
+    font-family: Barlow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(31, 28, 28);
+    padding-top: 20px;
+}
+.Section-3-service-3 p {
+    font-family: Dosis;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+.Section-3-service-bis {
+    display: flex; /* Active la disposition flex */
+    flex-wrap: wrap; /* Permet les lignes multiples */
+    justify-content: space-around; /* Distribue uniformément les éléments */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    gap: 160px; /* Espace entre les éléments */
+    max-width: 1200px; /* Largeur maximale commune */
+    margin: 0 auto; /* Centre horizontalement */
+    padding-top: 50px;
+}
+
+.Section-3-service-4 {
+    display: flex;
+    flex-direction: column; /* Assure un alignement vertical */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre les textes */
+}
+
+.Section-3-service-4 h2 {
+    font-family: Barlow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(31, 28, 28);
+    padding-top: 20px;
+}
+.Section-3-service-4 p {
+    font-family: Dosis;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+.Section-3-service-5 {
+    display: flex;
+    flex-direction: column; /* Assure un alignement vertical */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre les textes */
+}
+
+.Section-3-service-5 h2 {
+    font-family: Barlow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(31, 28, 28);
+    padding-top: 20px;
+}
+.Section-3-service-5 p {
+    font-family: Dosis;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    }
+
+.Section-3-service-5 h2 {
+    font-family: Barlow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(31, 28, 28);
+    padding-top: 20px;
+}
+.Section-3-service-5 p {
+    font-family: Dosis;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+.Section-3-service-6 {
+    display: flex;
+    flex-direction: column; /* Assure un alignement vertical */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    text-align: center; /* Centre les textes */
+}
+
+.Section-3-service-6 h2 {
+    font-family: Barlow;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: rgb(31, 28, 28);
+    padding-top: 3px;
+}
+.Section-3-service-6 p {
+    font-family: Dosis;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    }
+.Section-menu img, 
+.Section-2-container img, 
+.Section-2-container-bis img, 
+.Section-3-service img, 
+.Section-3-service-bis img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+    
+.Section-menu img:hover, 
+.Section-2-container img:hover, 
+.Section-2-container-bis img:hover, 
+.Section-3-service img:hover, 
+.Section-3-service-bis img:hover {
+    transform: scale(1.1); /* Agrandissement léger */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre douce */
+    }
+    
+    .Section-2, 
+    .Section-2-container, 
+    .Section-3, 
+    .Section-3-service, 
+    .Section-3-service-bis {
+        animation: fadeInUp 1s ease-in-out;
+        animation-delay: 0.2s;
+        animation-fill-mode: both;
+    }
+    
+    .Section-2-haut h1, .Section-3-haut h1 {
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .Section-2-haut h1:hover, .Section-3-haut h1:hover {
+        color: rgb(255, 182, 30); /* Change la couleur */
+        transform: scale(1.05); /* Agrandit légèrement le texte */
+    }
+    
+    .Section-2-container img, 
+.Section-3-service img {
+    animation: bounce 2s infinite;
+}
+
+.Section-2-container h2:hover, 
+.Section-3-service h2:hover {
+    color: rgb(255, 182, 30);
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+
+footer {
+    background-color: rgb(31, 28, 28);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}    
+    
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+    
+footer img {
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+    
+footer p {
+    margin-top: 20px;
+    font-family: Barlow;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.12857143580913544px;
+    color: white;
+    margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+    .Section-2-container, .Section-2-container-bis {
+        flex-direction: column; /* Passe en colonne */
+        align-items: center; /* Centre les éléments en colonne */
+        gap: 20px; /* Réduit l'espace entre les éléments */
+    }
+}
+
+@media (max-width: 768px) {
+    .Section-3-service, .Section-3-service-bis {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 600px) {
+    .Section-3-service, .Section-3-service-bis {
+        flex-direction: column; /* Passe en colonne sur petits écrans */
+        align-items: center; /* Centre les éléments */
+        gap: 20px; /* Réduit l’espacement vertical */
+    }
+
+    .Section-3-service img, .Section-3-service-bis img {
+        max-width: 150px; /* Réduit légèrement la taille des images pour les petits écrans */
+    }
+}
+@media (max-width: 600px) {
+    .MHR-Design {
+        max-width: 80%; /* Permet à l'image d'utiliser plus de largeur sur petits écrans */
+        min-width: 200px; /* Réduit encore la taille minimale pour mieux s’adapter */
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.active {
+    animation: fadeInUp 1s ease-in-out;
+    animation-fill-mode: both;
+}
+nav a {
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(197, 142, 23);
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 100%;
+}

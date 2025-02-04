@@ -1,0 +1,187 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.6;
+    background-color: rgb(197, 142, 23);
+    color: #333;
+}
+
+/* Header Menu */
+.Section-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(31, 28, 28);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Section-menu img {
+    height: 60px;
+    object-fit: contain;
+}
+
+.Section-menu nav {
+    display: flex;
+    gap: 20px;
+}
+
+.Section-menu nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.Section-menu nav a:hover {
+    color: rgb(197, 142, 23);
+}
+
+.button-Contact {
+    background-color: rgb(197, 142, 23);
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-Contact:hover {
+    background-color: rgb(255, 182, 30);
+}
+
+/* Global Styles */
+.Section-produits {
+    margin-top: 120px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(197, 142, 23);
+}
+
+.page-title {
+    font-size: 35px;
+    color: rgb(31, 28, 28);
+    margin-bottom: 40px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+}
+
+/* Style pour chaque section */
+.product-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgb(31, 28, 28);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Grille pour 3 produits alignés horizontalement */
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    flex: 1;
+    max-width: 30%; /* Chaque produit occupe environ 30% de la largeur */
+    background: rgb(31, 28, 28);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-item h2 {
+    font-size: 24px;
+    font-family: 'Barlow', sans-serif;
+    color: rgb(197, 142, 23);
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: rgb(197, 142, 23);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: rgb(255, 182, 30);
+    transform: scale(1.05);
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Footer */
+footer {
+    background-color: rgb(31, 28, 28);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 18px;
+}
